@@ -1,0 +1,233 @@
+
+
+/* ESTILO GENERAL */
+body{
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+header{
+    background-color: #8B0000;
+    color: white;
+    text-align: center;
+    border: 2px solid #5a0000;
+}
+
+nav{
+    background-color: #333;
+    padding: 5px;
+}
+
+nav ul{
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+}
+
+/* HOVER */
+nav ul li a:hover{
+    background-color: #8B0000;
+    border-radius: 5px;
+}
+
+
+
+
+/* ELEMENTO */
+.nav__list{
+    list-style:none;
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin:0;
+    padding:0;
+}
+
+/* ELEMENTO */
+.nav__item{
+    border-radius: 10px;
+}
+
+/* ELEMENTO */
+.nav__link{
+    text-decoration:none;
+    color:white;
+    padding:8px 12px;
+    display:block;
+    border:2px solid transparent;
+        border-radius: 10px;
+
+}
+
+/* HOVER */
+.nav__link:hover{
+    background:#a4161a;
+}
+
+/* MODIFICADORES */
+
+.nav__link--home{
+    font-weight:blue;
+    background-color: blue;
+}
+
+.nav__link--red{
+    background-color: blue;
+}
+
+.nav__link--white{
+    background-color: blue;
+    color:black;
+}
+
+.nav__link--rose{
+    background-color: blue;
+    color:black;
+}
+
+.nav__link--pairing{
+    border:2px solid #ffd166;
+}
+
+.nav__link--review{
+    background:#9d4edd;
+}
+
+.nav__link--blog{
+    background:#2a9d8f;
+}
+
+.nav__link--contact{
+    border:2px solid #ffd166;
+}
+
+/* SECCIONES */
+section{
+    background: rgb(212, 208, 208);
+    margin: 20;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+section h2{
+align-content: center;
+text-align: center;
+}
+/* SELECTORES DESCENDENTES */
+section article{
+    margin-top: 20px;
+    padding: 30px 60px;
+    background-color: white;
+    border-radius: 10px;
+}
+section p{
+text-align: justify;
+}
+
+section img{
+
+  width: 100%;
+}
+
+
+/* Contenedor de tarjetas */
+.tarjetas {
+  display: flex;           /* colocar tarjetas lado a lado */
+  gap: 20px;               /* espacio entre tarjetas */
+  flex-wrap: wrap;         /* que bajen a la siguiente línea si no cabe */
+  margin: 20px 20px;
+}
+
+/* Tarjeta individual */
+.tarjeta {
+  background: #f7f2ef;
+  border: 1px solid #d3bfa7;
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1 1 300px;         
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Efecto hover */
+.tarjeta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Títulos */
+.tarjeta h3 {
+  margin-top: 0;
+  color: #6b0f1b;
+}
+
+/* SIDEBAR */
+.sidebar{
+  border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: #9b9b9b77;
+}
+
+/* SELECTOR DESCENDENTE */
+.sidebar ul li{
+    margin-bottom: 5px;
+}
+
+/* FOOTER */
+footer{
+  display: flex ;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+/* FOOTER */
+footer p {
+ text-align: center;
+}
+
+
+/* HOVER EN FOOTER */
+footer a:hover{
+    color: #ffcccc;
+}
+
+.layout{
+    display: flex;
+    gap: 20px;
+    margin: 20px;
+}
+
+main{
+    flex: 3;
+    border: 1px solid #ccc;
+    background: white;
+}
+
+aside{
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+}
+
+html{
+  scroll-behavior: smooth;
+}
